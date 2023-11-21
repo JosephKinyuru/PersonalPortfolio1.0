@@ -1,4 +1,5 @@
 import '../Css/Footer.css';
+import { Link as ScrollLink } from 'react-scroll';
 
 function getCurrentYear() {
   return new Date().getFullYear();
@@ -7,6 +8,13 @@ function getCurrentYear() {
 export default function Footer() {
 
   const currentYear = getCurrentYear();
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -86,10 +94,48 @@ export default function Footer() {
               <li><a href='https://github.com/JosephKinyuru' target='_blank' rel='noopener noreferrer'><i className="fa-brands fa-github"></i></a></li>
             </ul>
             <ul className='links'>
-              <li><a href='#home'>Home</a></li>
-              <li><a href='#about'>About</a></li>
-              <li><a href='#projects'>Projects</a></li>
-              <li><a href='#contact'>Contact</a></li>
+              <li>
+                <ScrollLink
+                  activeClass="active"
+                  to="about"
+                  style={{ cursor: 'pointer' }} 
+                  spy={true}
+                  smooth={true}
+                  offset={-70} 
+                  duration={300}
+                  onClick={() => scrollToSection('about')}
+                >
+                  About
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  activeClass="active"
+                  to="projects"
+                  style={{ cursor: 'pointer' }} 
+                  spy={true}
+                  smooth={true}
+                  offset={-70} 
+                  duration={300}
+                  onClick={() => scrollToSection('projects')}
+                >
+                  Projects
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  activeClass="active"
+                  to="contact"
+                  style={{ cursor: 'pointer' }} 
+                  spy={true}
+                  smooth={true}
+                  offset={-70} 
+                  duration={300}
+                  onClick={() => scrollToSection('contact')}
+                >
+                  Contact
+                </ScrollLink>
+              </li>
             </ul>
             <p className='legal'> 
             © {currentYear} Joseph Kinyuru

@@ -19,7 +19,7 @@ export default function Hero () {
                 <section id="hero">
                     <h1>Hi, my name is</h1>
                     <h2 className="big-heading">Joseph Kinyuru.</h2>
-                    <h3 className="big-heading">I build cool tech stuff.</h3>
+                    <h3 className="big-heading">I build cool web apps.</h3>
                     <p>
                     I`m a software engineer experienced in building (and sometimes designing) unique web applications.
                     </p>

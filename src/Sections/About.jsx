@@ -3,6 +3,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../Css/About.css'; 
 import { Fade } from 'react-awesome-reveal';
 
+import Me from '/src/Assets/Me.jpg';
+
 const About = () => {
 
   const handleVisibilityChange = (inView) => {
@@ -45,9 +47,8 @@ const About = () => {
           <div className="wrapper">
             <LazyLoadImage
               className="img"
-              src="https://via.placeholder.com/300"
+              src= {Me}
               alt="Headshot"
-              effect="blur"
             />
           </div>
           </div>
