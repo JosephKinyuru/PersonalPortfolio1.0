@@ -47,7 +47,7 @@ Feel free to fork or clone this repository to create your own portfolio website 
 1. Generate a full static production build
 
    ```sh
-   vite build
+   npx vite build
    ```
 
 ## Support
