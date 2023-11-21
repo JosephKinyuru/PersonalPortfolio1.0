@@ -1,6 +1,6 @@
 # Portfolio v1.0
 
-This is version 1.0 of my portfolio website hosted on GitHub Pages.
+This is version 1.0 of my portfolio website hosted on netlify.
 
 ## Description
 
