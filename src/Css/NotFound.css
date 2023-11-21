@@ -1,0 +1,44 @@
+.NotFoundMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.NotFoundMain .StyledTitle{
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(100px, 25vw, 200px);
+    line-height: 1;
+}
+
+.NotFoundMain .StyledSubTitle{
+    font-size: clamp(30px, 5vw, 50px);
+    font-weight: 400;
+}
+
+.NotFoundMain .StyledHomeButton {
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1.75rem;
+    font-size: var(--fz-sm);
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.NotFoundMain .StyledHomeButton:hover,
+.NotFoundMain .StyledHomeButton:focus-visible {
+    outline: none;
+    box-shadow: 4px 4px 0 0 var(--green);
+    transform: translate(-5px, -5px);
+}
+
+.NotFoundMain .StyledHomeButton::after {
+    display: none !important;
+}
+
+
