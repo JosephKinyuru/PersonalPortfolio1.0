@@ -363,7 +363,7 @@ export default function Menu () {
                       </ScrollLink>
                     </li>
                 </ol>  
-              <a href="/resume.pdf" className="resume-link">
+              <a href="/resume" className="resume-link">
                 Resume
               </a>
             </nav>
