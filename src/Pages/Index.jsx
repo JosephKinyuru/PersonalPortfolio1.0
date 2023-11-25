@@ -42,7 +42,7 @@ export default function Index() {
 
     return (
       <>
-        <div>
+        <article>
           <NavBar scrollDirection={scrollDirection} scrolledToTop={scrolledToTop} />
           <main className="fillHeight" id="mainId">
             <Hero/>
@@ -51,7 +51,7 @@ export default function Index() {
             <Contact/>
           </main>
           <Footer />
-        </div>
+        </article>
         <div className="flashlight"></div>
       </>
     );
