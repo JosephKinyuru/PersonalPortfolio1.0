@@ -36,10 +36,11 @@ const About = () => {
               <li>Javascript</li>
               <li>React (vite)</li>
               <li>Typescript</li>
+              <li>Next JS</li>
+              <li>Tailwind</li>
+              <li>MongoDB</li>
               <li>Django</li>
               <li>PostgreSQL</li>
-              <li>Flask</li>
-              <li>Docker</li>
             </ul>
         </div>
         
